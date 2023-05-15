@@ -1,0 +1,161 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+:root {
+    --adsada: #ffffff; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: gray;
+    gap: 30em;
+}
+
+.imagem {
+    margin: 2em;
+    height: 20em;
+}
+
+.cabecalho_titulo {
+    color: white;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.cabecalho_descricao {
+    color: white;
+    font-size: 3em;
+}
+
+.conteúdo {
+    display: flex;
+}
+
+.conteudo_titulo {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo_titulo_texto {
+    background-color: cornflowerblue;
+    width: 20%;
+    margin-top: 0.5em;
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    padding: 0.2em;
+    margin-left: 0.5em;
+    padding-right: 4em;
+}
+
+.conteudo_titulo_divisor {
+    border: none;
+    border-top: 3px solid cornflowerblue;
+    width: 100%; 
+    margin: 0;
+    height: 0; 
+    margin-right: 5em;
+}
+
+.conteudo_elementos {
+    margin: 1.5em 5em 1.5em 3em;
+}
+
+.elemento {
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.elemento_elemento {
+    color: darkgray;
+    font-weight: 700;
+}
+
+.elemento_descricao {
+    margin-bottom: 0.5em;
+}
+
+.conteudo_direita {
+    background-color: cornflowerblue;
+    padding: 5em;
+}
+
+.titulo_direita {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.direita_divisor {
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.sobre_mim {
+    text-align: center;
+}
+
+.sobre_mim_conteudo {
+    font-size: 1.3em;
+    color: white;
+    margin-top: 0.5em;
+}
+
+.sobre_mim_descricao {
+    color: white;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.habilidade {
+    display: block;
+    margin: 0 6em 0 6em;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.habilidade_texto {
+    font-size: 1.4em;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecalho {
+        gap: 7em;
+    }
+
+    .habilidades {
+        gap: 4em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho {
+        display: block;
+        padding-bottom: 2em;
+    }
+
+    .conteúdo {
+        display: block;
+    }
+
+    .habilidade {
+        gap: 3em;
+    }
+
+    .sobre_mim_descricao {
+        text-align: center;
+    }
+}
